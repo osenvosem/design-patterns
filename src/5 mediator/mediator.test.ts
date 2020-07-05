@@ -1,4 +1,4 @@
-import { TChatroom, TParticipant, Chatroom, Participant } from "./mediator";
+import { TParticipant, Chatroom, Participant } from "./mediator";
 
 describe("Mediator", () => {
   test("should send a private message to a specific participant", () => {
