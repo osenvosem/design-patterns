@@ -1,1 +1,1 @@
-Design patterns implemented in Typescript and tested using jest.
+Design patterns implemented in Typescript and tested using Jest.
