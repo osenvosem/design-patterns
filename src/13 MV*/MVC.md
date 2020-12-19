@@ -1,5 +1,3 @@
-# MVC
-
 MVC is an architectural design pattern that encourages improved application organization through a separation of concerns. It enforces the isolation of business data (Models) from user interfaces (Views), with a third component (Controllers) traditionally managing logic and user-input.
 
 ## Model
