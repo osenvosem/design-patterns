@@ -27,7 +27,7 @@ export class Singleton {
   constructor(public model: string, public year: number, public color: string) {
     if (!Singleton.internalConstructorCall) {
       throw new Error(
-        "This class is supposed to be used as a singletone. Please, use `getInstance` method to get class instance."
+        "This class is supposed to be used as a singleton. Please, use `getInstance` method to get class instance."
       );
     }
   }
