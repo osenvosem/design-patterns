@@ -30,3 +30,8 @@ export class Signal {
     return this.listeners.length;
   }
 }
+
+export const eventCollection = {
+  eventOne: new Signal(),
+  eventTwo: new Signal(),
+};
