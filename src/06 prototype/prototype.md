@@ -1,0 +1,1 @@
+The prototype pattern creates objects based on a template of an existing object through cloning. We can think of the prototype pattern as being based on prototypal inheritance where we create objects which act as prototypes for other objects.

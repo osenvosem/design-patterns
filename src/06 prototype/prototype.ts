@@ -43,7 +43,7 @@ export const vehicle = (model: string): typeof vehiclePrototype => {
   function F(): void {}
   F.prototype = vehiclePrototype;
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const f = new F();
   f.init(model);
@@ -60,7 +60,7 @@ export const beget = ((): ((proto: Proto) => Proto) => {
   function F(): void {}
   return (proto: Proto): Proto => {
     F.prototype = proto;
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     return new F();
   };
