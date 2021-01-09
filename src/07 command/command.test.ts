@@ -10,7 +10,7 @@ describe("Command", () => {
     expect(carManager.execute(method, model, id)).toBe(resultStr);
   });
 
-  it("should return `undefined` if methods not exist or its name `execute`", () => {
+  it("should return `undefined` if the method passed doesn't exist or its name `execute`", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const method: any = "nonExistingMethod";
     const model = "Ferrari";

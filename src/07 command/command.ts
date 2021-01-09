@@ -28,8 +28,6 @@ export const carManager: CarManager = {
   execute(methodName, ...restArgs) {
     if (methodName === "execute" || !this[methodName]) return undefined;
 
-    if (this[methodName]) {
-      return this[methodName](...restArgs);
-    }
+    return this[methodName](...restArgs);
   },
 };
