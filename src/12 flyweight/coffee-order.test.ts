@@ -1,7 +1,4 @@
-import {
-  CoffeeFlavorFactory,
-  CoffeeOrderContext,
-} from "./coffee-order";
+import { CoffeeFlavorFactory, CoffeeOrderContext } from "./coffee-order";
 
 describe("Flyweight coffee order", () => {
   it("should return same object", () => {
@@ -13,11 +10,7 @@ describe("Flyweight coffee order", () => {
 
     expect(coffeeFlavor).toBe(factory.getCoffeeFlavor(testFlavor));
     expect(factory.getTotalCoffeeFlavorsMade()).toBe(1);
-    expect(coffeeFlavor.serveCoffee(coffeeOrderContext)).toContain(
-      testFlavor
-    );
-    expect(coffeeFlavor.serveCoffee(coffeeOrderContext)).toContain(
-      testTable
-    );
+    expect(coffeeFlavor.serveCoffee(coffeeOrderContext)).toContain(testFlavor);
+    expect(coffeeFlavor.serveCoffee(coffeeOrderContext)).toContain(testTable);
   });
 });
